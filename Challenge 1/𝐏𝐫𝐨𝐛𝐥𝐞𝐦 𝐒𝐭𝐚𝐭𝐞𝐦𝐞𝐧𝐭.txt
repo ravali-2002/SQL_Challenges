@@ -1,0 +1,40 @@
+𝐏𝐫𝐨𝐛𝐥𝐞𝐦 𝐒𝐭𝐚𝐭𝐞𝐦𝐞𝐧𝐭:
+An organization is looking to hire candidates for their junior and senior positions.
+
+𝐓𝐡𝐞𝐲 𝐡𝐚𝐯𝐞 𝐚 𝐭𝐨𝐭𝐚𝐥 𝐪𝐮𝐨𝐭𝐚/𝐥𝐢𝐦𝐢𝐭 𝐨𝐟 𝟓𝟎𝟎𝟎𝟎$ 𝐢𝐧 𝐚𝐥𝐥, 𝐭𝐡𝐞𝐲 𝐡𝐚𝐯𝐞 𝐭𝐨 𝐟𝐢𝐫𝐬𝐭 𝐟𝐢𝐥𝐥 𝐮𝐩 𝐭𝐡𝐞 𝐬𝐞𝐧𝐢𝐨𝐫 𝐩𝐨𝐬𝐢𝐭𝐢𝐨𝐧𝐬 𝐬𝐭𝐚𝐫𝐭𝐢𝐧𝐠 𝐟𝐫𝐨𝐦 𝐥𝐨𝐰𝐞𝐫 𝐭𝐨 𝐡𝐢𝐠𝐡𝐞𝐫 𝐬𝐚𝐥𝐚𝐫𝐲 𝐚𝐧𝐝 𝐭𝐡𝐞𝐧 𝐟𝐢𝐥𝐥 𝐮𝐩 𝐭𝐡𝐞 𝐣𝐮𝐧𝐢𝐨𝐫 𝐩𝐨𝐬𝐢𝐭𝐢𝐨𝐧𝐬.
+
+There are 4 test cases , write a SQL query to satisfy all the test cases.
+
+𝐘𝐨𝐮 𝐡𝐚𝐯𝐞 𝐭𝐡𝐞 𝐜𝐚𝐧𝐝𝐢𝐝𝐚𝐭𝐞𝐬 𝐭𝐚𝐛𝐥𝐞 𝐚𝐧𝐝 𝐲𝐨𝐮 𝐧𝐞𝐞𝐝 𝐭𝐨 𝐝𝐞𝐫𝐢𝐯𝐞 𝐨𝐮𝐭𝐩𝐮𝐭 𝐭𝐚𝐛𝐥𝐞 𝐚𝐬 𝐬𝐡𝐨𝐰𝐧 𝐢𝐧 𝐭𝐡𝐞 𝐩𝐢𝐜𝐭𝐮𝐫𝐞 𝐚𝐬 𝐩𝐞𝐫 𝐭𝐡𝐞 𝐭𝐞𝐬𝐭 𝐜𝐚𝐬𝐞𝐬.
+
+𝐓𝐚𝐛𝐥𝐞 𝐬𝐜𝐫𝐢𝐩𝐭:
+Create table candidates(
+id int primary key,
+positions varchar(10) not null,
+salary int not null);
+
+𝐭𝐞𝐬𝐭 𝐜𝐚𝐬𝐞 𝟏:
+insert into candidates values(1,'junior',5000);
+insert into candidates values(2,'junior',7000);
+insert into candidates values(3,'junior',7000);
+insert into candidates values(4,'senior',10000);
+insert into candidates values(5,'senior',30000);
+insert into candidates values(6,'senior',20000);
+
+𝐭𝐞𝐬𝐭 𝐜𝐚𝐬𝐞 𝟐:
+insert into candidates values(20,'junior',10000);
+insert into candidates values(30,'senior',15000);
+insert into candidates values(40,'senior',30000);
+
+𝐭𝐞𝐬𝐭 𝐜𝐚𝐬𝐞 𝟑:
+insert into candidates values(1,'junior',15000);
+insert into candidates values(2,'junior',15000);
+insert into candidates values(3,'junior',20000);
+insert into candidates values(4,'senior',60000);
+
+𝐭𝐞𝐬𝐭 𝐜𝐚𝐬𝐞 𝟒:
+insert into candidates values(10,'junior',10000);
+insert into candidates values(40,'junior',10000);
+insert into candidates values(20,'senior',15000);
+insert into candidates values(30,'senior',30000);
+insert into candidates values(50,'senior',15000);

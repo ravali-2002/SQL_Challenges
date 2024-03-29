@@ -1,0 +1,6 @@
+My Solution:
+with cte1 as(
+select *,sum(salary) over(partition by positions order by salary asc,id) s from candidates),
+cte2 as(
+select id,positions,salary,sum(salary) over(order by positions desc,salary asc,id) s1 from cte1 where s<=50000)
+select sum(case when positions='junior' then 1 else 0 end) as juniors,sum(case when positions = 'senior' then 1 else 0 end) as seniors from cte2 where s1<=50000
